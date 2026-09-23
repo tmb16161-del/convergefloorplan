@@ -1,6 +1,3 @@
-
-
-Index · HTML
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -8,14 +5,14 @@ Index · HTML
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Converge Awards Dinner 2026</title>
 <meta name="description" content="Meet the 2026 Converge finalists and find your table.">
- 
+
 <meta name="robots" content="noindex, nofollow">
- 
+
 <!--
 ================================================================================
   EVERYTHING YOU NEED TO EDIT IS IN THIS ONE SCRIPT BLOCK.
   Nothing below it needs touching.
- 
+
   1. EVENT      - date, venue, one line of welcome copy
   2. SEATING    - paste your attendee list here when you have it
   3. TABLES     - where each table sits on the floorplan
@@ -34,26 +31,26 @@ const EVENT = {
   welcome:  "Thirty-four finalists, five challenges, one evening. Browse the class of 2026 below, or find your table.",
   email:    "marketing@convergechallenge.com"
 };
- 
+
 /* ---------------------------------------------------------------------------
    2. SEATING LIST  — paste from your spreadsheet between the backticks.
- 
+
    One guest per line. Copy two columns straight out of Excel or Sheets
    (Name, Table) and paste — the tab between them is handled automatically.
    A comma works too: the text after the LAST comma is read as the table,
    so "Smith, Jane, 4" still works.
    An optional third tab-separated column is shown under the guest's name.
- 
+
         Jane Smith      4       University of Glasgow
         Ahmed Khan      4
         Smith, Jane, 12
- 
+
    Leave it empty and the seat finder shows a "coming soon" message,
    so you can publish the finalist profiles now and add seating later.
 --------------------------------------------------------------------------- */
 const SEATING = `
 `;
- 
+
 /* ---------------------------------------------------------------------------
    3. TABLES — position on the floorplan, as percentages of the room.
    x: 0 = far left, 100 = far right.   y: 0 = top (stage end), 100 = bottom.
@@ -70,21 +67,21 @@ const TABLES = [
   { id: "16", x: 14, y: 84 }, { id: "17", x: 32, y: 84 }, { id: "18", x: 50, y: 84 },
   { id: "19", x: 68, y: 84 }, { id: "20", x: 86, y: 84 }
 ];
- 
+
 /* Fixed features of the room. x/y is the centre, w/h the size, all in percent. */
 const FIXTURES = [
   { label: "Stage",    x: 50, y: 8,  w: 44, h: 11 },
   { label: "Bar",      x: 95, y: 12, w: 10, h: 18 },
   { label: "Entrance", x: 8,  y: 97, w: 16, h: 6  }
 ];
- 
+
 /* ---------------------------------------------------------------------------
    4. FINALISTS
    challenge must be one of: Converge, Create Change, KickStart, Net Zero,
    Performing and Production Arts
 --------------------------------------------------------------------------- */
 const FINALISTS = [
- 
+
   /* --- Converge Challenge --- */
   {
     name: "FreeForm Photonics",
@@ -122,7 +119,7 @@ const FINALISTS = [
     tagline: "An acoustic skin sensor that brings dermatology into the community",
     summary: "TissueMetrics is rethinking skin health for the 300+ million people worldwide suffering from inflammatory skin diseases such as eczema and psoriasis. Current patient journeys rely on subjective assessment, slow trial-and-error treatment cycles, and long waits to see dermatologists. In community settings, pharmacies lack objective tools to offer enhanced skincare services – but are seeking new service capabilities due to decreasing prescription reimbursement and footfall. TissueMetrics has invented an innovative acoustic skin sensor that can measure how the skin’s layers are changing with treatment. This brings dermatologist quality technology to the community, solves these long-standing patient and commercial needs."
   },
- 
+
   /* --- Create Change Challenge --- */
   {
     name: "Box of Greebles",
@@ -154,7 +151,7 @@ const FINALISTS = [
     tagline: "Wearable data to shorten the endometriosis and PCOS diagnostic journey",
     summary: "WombWise is a femtech platform that reduces the 8-10 year diagnostic journey for endometriosis and PCOS by using physiological data from everyday wearable devices such as the Oura Ring and Apple Watch to identify non-invasive digital biomarkers of reproductive health conditions. The platform transforms continuous wearable biosignals into structured clinical insights, enabling women to access objective evidence of their symptoms far sooner and supporting earlier, more informed conversations with healthcare professionals. Our goal is to reduce time to diagnosis by up to 90%, improving quality of life and restoring agency for the millions of women living with undiagnosed reproductive health conditions."
   },
- 
+
   /* --- KickStart Challenge --- */
   {
     name: "AI for the Eye",
@@ -228,7 +225,7 @@ const FINALISTS = [
     tagline: "Growing women's and girls' participation across the game",
     summary: "Women’s Football Hub CIC empowers women and girls through having fun in football. We also create research backed resources, including global expert podcasts, and community-building initiatives. We encourage our community to participate in playing, coaching, and refereeing. Growth is supported through our environmentally conscious merchandise store and partnerships with organisations including Walking Football Scotland. Our health and wellbeing focus, led by experienced coaches and health care professionals, aims to increase female involvement in football ahead of the 2035 UK hosted Women’s World Cup."
   },
- 
+
   /* --- Net Zero Challenge --- */
   {
     name: "Catalyst Neuromorphic",
@@ -260,7 +257,7 @@ const FINALISTS = [
     tagline: "KineticLink: grid transmission capacity and inertia in one device",
     summary: "The UK's transition to Net Zero creates two huge infrastructure challenges: transmitting power efficiently over long distances (i.e. offshore wind, north-south corridors, etc) and maintaining the grid stabilising inertia that spinning fossil fuel generators previously provided. Solving these problems cost £1.5 billion last year. TA Technologies, a University of Strathclyde spin-out, is commercialising the KineticLink, a novel patentable invention that delivers both solutions. KineticLink can reduce the current grid transmission infrastructure bottleneck at a very competitive price and simultaneously provide inertia to the grid. Revenue comes from manufacturing and installing KineticLinks, followed by licensing fees and a continuous improvement programme."
   },
- 
+
   /* --- Performing and Production Arts Challenge --- */
   {
     name: "Four Door Theatre",
@@ -300,12 +297,12 @@ const FINALISTS = [
   }
 ];
 </script>
- 
+
 <style>
 /* --------------------------------------------------------------------------
    Brand tokens, straight from the 2025 Converge guidelines.
    Navy is the page, yellow is the highlight, light blue does the fine lines.
- 
+
    If you have licensed Omnes and Proxima Nova webfonts, drop the files
    beside this one and uncomment the @font-face rules — the stacks below
    already look for them first.
@@ -315,14 +312,14 @@ const FINALISTS = [
 @font-face { font-family:"Omnes"; src:url("omnes-medium.woff2")  format("woff2"); font-weight:500; font-display:swap; }
 @font-face { font-family:"Proxima Nova"; src:url("proximanova-regular.woff2") format("woff2"); font-weight:400; font-display:swap; }
 */
- 
+
 :root{
   --navy:#002337;
   --blue:#148BC7;
   --light-blue:#B4E6FA;
   --yellow:#FECB00;
   --light-yellow:#FFEDB0;
- 
+
   /* Page surfaces. Lighten --bg and --surface together if you ever want a
      paler blue; --ink and --ink-soft would then need to go dark. */
   --bg:#002337;
@@ -331,19 +328,19 @@ const FINALISTS = [
   --ink-soft:rgba(255,255,255,.80);
   --ink-mute:rgba(255,255,255,.58);
   --rule:rgba(180,230,250,.30);
- 
+
   --c-converge:#009FE3;
   --c-create:#FFDC22;
   --c-kickstart:#ED315A;
   --c-netzero:#9AC431;
   --c-arts:#B4E6FA;
- 
+
   --display:"Omnes","Nunito",system-ui,sans-serif;
   --body:"Proxima Nova","Source Sans 3",system-ui,sans-serif;
- 
+
   --page:min(1180px,100% - 3rem);
 }
- 
+
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;color-scheme:dark}
 body{
@@ -360,9 +357,9 @@ p{margin:0 0 1rem}
 a{color:var(--ink)}
 ::selection{background:var(--yellow);color:var(--navy)}
 :focus-visible{outline:3px solid var(--light-blue);outline-offset:3px}
- 
+
 .page{width:var(--page);margin-inline:auto}
- 
+
 /* --- masthead: the brand's rule-above, rule-below device --- */
 .masthead{padding:1.5rem 0 0}
 .wordmark{
@@ -372,7 +369,7 @@ a{color:var(--ink)}
   font-family:var(--display);font-weight:600;letter-spacing:.34em;font-size:.9rem;
 }
 .wordmark span:last-child{letter-spacing:.02em;font-weight:400;font-size:.85rem;color:var(--ink-mute)}
- 
+
 /* --- hero --- */
 .hero{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;padding:3.5rem 0 2.5rem}
 .hero-block{background:var(--yellow);color:var(--navy);display:inline-block;padding:.35em .55em .45em;font-family:var(--display);font-weight:500;font-size:clamp(2.6rem,8vw,4.75rem);line-height:.98;letter-spacing:-.015em}
@@ -382,7 +379,7 @@ a{color:var(--ink)}
 .hero p.blurb{max-width:46ch;margin-top:.85rem;color:var(--ink-soft)}
 .doodle{width:clamp(120px,18vw,210px);height:auto;color:var(--light-blue);opacity:.6}
 @media (max-width:760px){.hero{grid-template-columns:1fr;padding:2.25rem 0 1.5rem}.doodle{display:none}}
- 
+
 /* --- tabs --- */
 .tabs{display:flex;gap:.25rem;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--bg);z-index:20;padding-top:.25rem}
 .tabs button{
@@ -392,10 +389,10 @@ a{color:var(--ink)}
 }
 .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--yellow)}
 .tabs button:hover{color:var(--ink)}
- 
+
 section[role="tabpanel"]{padding:2.5rem 0 4rem}
 section[hidden]{display:none}
- 
+
 /* --- controls --- */
 .controls{display:grid;gap:1.25rem;margin-bottom:2rem}
 .field{position:relative;max-width:34rem}
@@ -407,7 +404,7 @@ section[hidden]{display:none}
 .field input::placeholder{color:var(--ink-mute)}
 .field input:focus{border-color:var(--light-blue);outline:none;box-shadow:0 0 0 3px rgba(254,203,0,.35)}
 .field label{display:block;font-family:var(--display);font-weight:500;margin-bottom:.4rem}
- 
+
 .filters{display:flex;flex-wrap:wrap;gap:.5rem}
 .chip{
   appearance:none;cursor:pointer;background:transparent;
@@ -420,9 +417,9 @@ section[hidden]{display:none}
 .chip[aria-pressed="true"]{background:var(--yellow);color:var(--navy);border-color:var(--yellow)}
 .chip[aria-pressed="true"]:hover{background:var(--yellow)}
 .chip[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--navy)}
- 
+
 .count{font-size:.95rem;color:var(--ink-mute);margin:0}
- 
+
 /* --- finalist cards --- */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.25rem;margin-top:1.5rem}
 .card{
@@ -443,12 +440,12 @@ section[hidden]{display:none}
 .card summary::after{content:"+";float:right;font-size:1.1rem;line-height:1;color:var(--yellow)}
 .card details[open] summary::after{content:"–"}
 .card details p{margin:.85rem 0 .25rem;font-size:.98rem;color:var(--ink-soft)}
- 
+
 .empty{border:1px dashed var(--rule);padding:2rem;background:rgba(255,255,255,.05);max-width:44rem}
 .empty h3{font-size:1.25rem;margin-bottom:.5rem}
 .empty p{color:var(--ink-soft)}
 .empty p:last-child{margin-bottom:0}
- 
+
 /* --- seat finder --- */
 .result{background:var(--surface);border:1px solid rgba(180,230,250,.18);border-left:6px solid var(--yellow);padding:1.25rem 1.4rem;margin-bottom:1rem}
 .result h3{font-size:1.3rem}
@@ -461,7 +458,7 @@ section[hidden]{display:none}
 .pick{appearance:none;border:1px solid var(--rule);background:transparent;cursor:pointer;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.6rem .9rem;text-align:left;width:100%;margin-bottom:.4rem}
 .pick:hover{background:rgba(255,255,255,.08)}
 .pick b{font-weight:600}
- 
+
 .plan-wrap{overflow-x:auto;margin-top:2rem;padding-bottom:.5rem}
 .plan{position:relative;min-width:600px;aspect-ratio:16/11;background:rgba(255,255,255,.06);border:1px solid var(--rule)}
 .fixture{position:absolute;transform:translate(-50%,-50%);background:var(--light-blue);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:600;font-size:.85rem;letter-spacing:.08em}
@@ -474,22 +471,22 @@ section[hidden]{display:none}
 }
 .table-dot.is-found{background:var(--yellow);border-color:var(--yellow);color:var(--navy);transform:translate(-50%,-50%) scale(1.22);box-shadow:0 0 0 .55rem rgba(254,203,0,.28)}
 @media (prefers-reduced-motion:no-preference){.table-dot{transition:transform .35s ease,background .35s ease,box-shadow .35s ease}}
- 
+
 footer{border-top:1px solid var(--rule);padding:2rem 0 3rem;font-size:.95rem;color:var(--ink-mute)}
 footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 </style>
 </head>
- 
+
 <body>
 <div class="page">
- 
+
   <header class="masthead">
     <div class="wordmark">
       <span>CONVERGE</span>
       <span id="wordmark-date"></span>
     </div>
- 
+
     <div class="hero">
       <div>
         <h1 class="hero-block"><em id="hero-title">Converge Awards</em><em id="hero-year">2026</em></h1>
@@ -503,12 +500,12 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
       </svg>
     </div>
   </header>
- 
+
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" id="tab-finalists" aria-controls="panel-finalists" aria-selected="true">Finalists</button>
     <button role="tab" id="tab-seating" aria-controls="panel-seating" aria-selected="false">Find your table</button>
   </nav>
- 
+
   <!-- ===================== FINALISTS ===================== -->
   <section role="tabpanel" id="panel-finalists" aria-labelledby="tab-finalists">
     <div class="controls">
@@ -525,7 +522,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
       <p>Try a shorter word, or clear the challenge filters to search all thirty-four.</p>
     </div>
   </section>
- 
+
   <!-- ===================== SEATING ===================== -->
   <section role="tabpanel" id="panel-seating" aria-labelledby="tab-seating" hidden>
     <div id="seating-live">
@@ -540,27 +537,27 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
         <div class="plan" id="plan" role="img" aria-label="Floorplan of the dining room"></div>
       </div>
     </div>
- 
+
     <div class="empty" id="seating-soon" hidden>
       <h3>Seating opens closer to the night</h3>
       <p>Table allocations go live here a few days before the dinner. Come back to this page and type your name to find your seat.</p>
       <p>In the meantime, the finalist profiles are ready to browse.</p>
     </div>
   </section>
- 
+
   <footer>
     <p>Converge Awards Dinner. For more information or to request additional marketing assets, email
       <a id="footer-email" href="#">marketing@convergechallenge.com</a>.</p>
   </footer>
 </div>
- 
+
 <script>
 /* ==========================================================================
    App code. You shouldn't need to change anything past this line.
 ========================================================================== */
 (function () {
   "use strict";
- 
+
   const CHALLENGES = [
     { key:"Converge",                      label:"Converge",        colour:"var(--c-converge)"  },
     { key:"Create Change",                 label:"Create Change",   colour:"var(--c-create)"    },
@@ -571,7 +568,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
   const colourFor = k => (CHALLENGES.find(c => c.key === k) || {}).colour || "var(--navy)";
   const $  = s => document.querySelector(s);
   const norm = s => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’'`]/g, "'").replace(/\s+/g, " ").trim();
- 
+
   /* ---------- header ---------- */
   $("#hero-title").textContent = EVENT.title;
   $("#hero-year").textContent  = EVENT.year;
@@ -582,7 +579,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
   mail.href = "mailto:" + EVENT.email;
   mail.textContent = EVENT.email;
   document.title = EVENT.title + " " + EVENT.year;
- 
+
   /* ---------- tabs ---------- */
   const tabs = [...document.querySelectorAll('[role="tab"]')];
   function showTab(id, push) {
@@ -595,11 +592,11 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
   }
   tabs.forEach(t => t.addEventListener("click", () => showTab(t.id, true)));
   if (location.hash === "#seating") showTab("tab-seating", false);
- 
+
   /* ---------- finalists ---------- */
   const active = new Set();
   const filterBar = $("#challenge-filters");
- 
+
   CHALLENGES.forEach(c => {
     const b = document.createElement("button");
     b.className = "chip";
@@ -614,7 +611,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
     });
     filterBar.appendChild(b);
   });
- 
+
   const grid = $("#finalist-grid");
   function renderFinalists() {
     const q = norm($("#finalist-search").value);
@@ -623,7 +620,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
       if (!q) return true;
       return norm([f.name, f.lead, f.challenge, f.tagline, f.summary].join(" ")).includes(q);
     });
- 
+
     grid.innerHTML = "";
     list.forEach(f => {
       const card = document.createElement("article");
@@ -637,7 +634,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
         "<details><summary>Read the full summary</summary><p>" + f.summary + "</p></details>";
       grid.appendChild(card);
     });
- 
+
     $("#finalist-empty").hidden = list.length > 0;
     const total = FINALISTS.length;
     $("#finalist-count").textContent = list.length === total
@@ -646,7 +643,7 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
   }
   $("#finalist-search").addEventListener("input", renderFinalists);
   renderFinalists();
- 
+
   /* ---------- seating ---------- */
   function parseSeating(raw) {
     return raw.split("\n").map(l => l.trim()).filter(Boolean)
@@ -666,12 +663,12 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
       })
       .filter(Boolean);
   }
- 
+
   const guests = parseSeating(SEATING);
   const hasSeating = guests.length > 0;
   $("#seating-live").hidden = !hasSeating;
   $("#seating-soon").hidden = hasSeating;
- 
+
   if (hasSeating) {
     const plan = $("#plan");
     FIXTURES.forEach(f => {
@@ -689,12 +686,12 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
       el.textContent = t.id;
       plan.appendChild(el);
     });
- 
+
     function highlight(table) {
       plan.querySelectorAll(".table-dot").forEach(d =>
         d.classList.toggle("is-found", norm(d.dataset.table) === norm(table)));
     }
- 
+
     const results = $("#seat-results");
     function showGuest(g) {
       const mates = guests.filter(o => o.table === g.table && o.name !== g.name);
@@ -708,19 +705,19 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
         "</div>";
       highlight(g.table);
     }
- 
+
     function runSearch() {
       const q = norm($("#seat-search").value);
       if (q.length < 2) { results.innerHTML = ""; highlight(null); return; }
       const hits = guests.filter(g => norm(g.name).includes(q) || norm(g.org).includes(q));
- 
+
       if (!hits.length) {
         results.innerHTML = '<div class="result multi"><h3>No match for that spelling</h3>' +
           "<p>Try your surname on its own, or ask a member of the Converge team and they'll find you.</p></div>";
         highlight(null); return;
       }
       if (hits.length === 1) { showGuest(hits[0]); return; }
- 
+
       results.innerHTML = '<div class="result multi"><h3>' + hits.length + " people match</h3>" +
         "<p>Pick your name:</p>" +
         hits.slice(0, 12).map((g, i) =>
@@ -736,4 +733,3 @@ footer a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3p
 </script>
 </body>
 </html>
- 
